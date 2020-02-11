@@ -7,18 +7,19 @@
 
     <table class="table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Description</th>
-                <th>Name</th>
-                <th>actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>BookId-Bookname</th>
+            <th>Description</th>
+            <th>Name</th>
+            <th>actions</th>
+        </tr>
         </thead>
         <tbody>
         {% for review in reviews %}
             <tr>
                 <td>{{ review.id }}</td>
-                <td>{{ book }}</td>
+                <td>{{ review.BookId }}</td>
                 <td>{{ review.description }}</td>
                 <td>{{ review.name }}</td>
                 <td>
