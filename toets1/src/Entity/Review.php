@@ -17,13 +17,13 @@ class Review
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Book")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Book", inversedBy="reviews")
      * @ORM\JoinColumn(nullable=false)
      */
     private $BookId;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=200)
      */
     private $description;
 
